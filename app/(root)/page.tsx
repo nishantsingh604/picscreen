@@ -19,6 +19,7 @@ const Page = () => {
       visibility="public"
       duration={156}
       />
+      <h1 className="text-2xl font-karla">Made by Nishant Singh :)</h1>
     </main>
   );
 }
