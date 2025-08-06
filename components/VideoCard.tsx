@@ -2,7 +2,7 @@
 import Image from "next/image";
 // import ImageWithFallback from "./ImageWithFallback";
 import Link from "next/link";
-// import { useState } from "react";
+import { useState } from "react";
 
 const VideoCard = ({
   id,
@@ -15,17 +15,17 @@ const VideoCard = ({
   visibility,
   duration
 }: VideoCardProps) => {
-  // const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
 
-  // const handleCopy = (e: React.MouseEvent) => {
-  //   e.stopPropagation();
-  //   e.preventDefault();
-  //   navigator.clipboard.writeText(`${window.location.origin}/video/${id}`);
-  //   setCopied(true);
-  //   setTimeout(() => {
-  //     setCopied(false);
-  //   }, 3000);
-  // };
+  const handleCopy = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+    navigator.clipboard.writeText(`${window.location.origin}/video/${id}`);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  };
 
   return (
     <Link href={`/video/${id}`} className="video-card">
@@ -39,19 +39,17 @@ const VideoCard = ({
       <article>
         <div>
           <figure>
-            {
-              /* <ImageWithFallback
+            {/* <ImageWithFallback
               src={userImg}
               width={34}
               height={34}
               alt="avatar"
               className="rounded-full aspect-square"
-            />*/
-              <figcaption>
-                <h3>{username}</h3>
-                <p>{visibility}</p>
-              </figcaption>
-            }
+            /> */}
+            <figcaption>
+              <h3>{username}</h3>
+              <p>{visibility}</p>
+            </figcaption>
           </figure>
           <aside>
             <Image
@@ -72,10 +70,12 @@ const VideoCard = ({
           })}
         </h2>
       </article>
-      <button onClick={} className="copy-btn">
+      <button onClick={handleCopy} className="copy-btn">
         <Image
-          src="/assets/icons/link.svg"
-                    alt="Copy Link"
+          src={
+            copied ? "/assets/icons/checkmark.svg" : "/assets/icons/link.svg"
+          }
+          alt="Copy Link"
           width={18}
           height={18}
         />
@@ -88,4 +88,3 @@ const VideoCard = ({
 };
 
 export default VideoCard;
- 

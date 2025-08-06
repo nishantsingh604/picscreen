@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import VideoCard from '@/components/VideoCard'
+import { dummyCards } from '@/constants';
 import React from 'react'
 
 const Page = () => {
@@ -8,8 +9,9 @@ const Page = () => {
       <Header title="All Videos" subHeader="Public Library" />
       <h1 className="text-2xl font-karla">Welcome to PicScreen</h1>
 {dummyCards.map((card) => (
-        <VideoCard
-          }
+        // eslint-disable-next-line react/jsx-key
+        <VideoCard {...card}/>
+          ))}
 
       <VideoCard
         id="1"

@@ -46,3 +46,98 @@ export const DEFAULT_RECORDING_CONFIG = {
   audioBitsPerSecond: 128000,
   videoBitsPerSecond: 2500000
 };
+
+const dummyCards = [
+  {
+    id: "1",
+    title: "Snapchat message",
+    thumbnail: "/assets/samples/thumbnail (1).png",
+    createdAt: new Date("2025-02-01"),
+    userImg: "/assets/images/jason.png",
+    username: "jason",
+    views: 10,
+    visibility: "public",
+    duration: 156
+  },
+  {
+    id: "2",
+    title: "Sample Video",
+    thumbnail: "/assets/samples/thumbnail (2).png",
+    createdAt: new Date("2025-02-02"),
+    userImg: "/assets/images/jessica.png",
+    username: "jane",
+    views: 20,
+    visibility: "private",
+    duration: 200
+  },
+  {
+    id: "3",
+    title: "Cooking Vlog",
+    thumbnail: "/assets/samples/thumbnail (3).png",
+    createdAt: new Date("2025-02-03"),
+    userImg: "/assets/images/sarah.png",
+    username: "sarah",
+    views: 45,
+    visibility: "public",
+    duration: 180
+  },
+  {
+    id: "4",
+    title: "Gaming Highlights",
+    thumbnail: "/assets/samples/thumbnail (4).png",
+    createdAt: new Date("2025-02-04"),
+    userImg: "/assets/images/michael.png",
+    username: "mike",
+    views: 120,
+    visibility: "unlisted",
+    duration: 540
+  },
+  {
+    id: "5",
+    title: "Tech Review 2025",
+    thumbnail: "/assets/samples/thumbnail (5).png",
+    createdAt: new Date("2025-02-05"),
+    userImg: "/assets/images/emily.png",
+    username: "emily",
+    views: 78,
+    visibility: "public",
+    duration: 300
+  },
+  {
+    id: "6",
+    title: "Day in My Life",
+    thumbnail: "/assets/samples/thumbnail (6).png",
+    createdAt: new Date("2025-02-06"),
+    userImg: "/assets/images/alex.png",
+    username: "alex",
+    views: 35,
+    visibility: "private",
+    duration: 220
+  },
+  {
+    id: "7",
+    title: "Street Interview",
+    thumbnail: "/assets/samples/thumbnail (7).png",
+    createdAt: new Date("2025-02-07"),
+    userImg: "/assets/images/lisa.png",
+    username: "nina",
+    views: 92,
+    visibility: "public",
+    duration: 410
+  },
+  {
+    id: "8",
+    title: "Fitness Routine",
+    thumbnail: "/assets/samples/thumbnail (8).png",
+    createdAt: new Date("2025-02-08"),
+    userImg: "/assets/images/david.png",
+    username: "leo",
+    views: 58,
+    visibility: "unlisted",
+    duration: 360
+  },
+
+];
+
+
+export { dummyCards };      
