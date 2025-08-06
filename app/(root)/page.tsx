@@ -7,6 +7,9 @@ const Page = () => {
     <main className="wrapper page">
       <Header title="All Videos" subHeader="Public Library" />
       <h1 className="text-2xl font-karla">Welcome to PicScreen</h1>
+{dummyCards.map((card) => (
+        <VideoCard
+          }
 
       <VideoCard
         id="1"
