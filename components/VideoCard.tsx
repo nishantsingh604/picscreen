@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-// import ImageWithFallback from "./ImageWithFallback";
+import ImageWithFallback from "./ImageWithFallback";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -39,13 +39,13 @@ const VideoCard = ({
       <article>
         <div>
           <figure>
-            {/* <ImageWithFallback
+            <ImageWithFallback
               src={userImg}
               width={34}
               height={34}
               alt="avatar"
               className="rounded-full aspect-square"
-            /> */}
+            />
             <figcaption>
               <h3>{username}</h3>
               <p>{visibility}</p>
